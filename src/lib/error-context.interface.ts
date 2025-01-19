@@ -1,12 +1,12 @@
 // Interface.
 import { Context } from './context.interface';
 /**
- * @description Context for error handling with a generic error code and message.
+ * @description Context for error handling with a generic error `code` and `message`.
  * @export
  * @interface ErrorContext
  * @template [Type=string] 
- * @template {number} [Code=number] Generic type for the error code, defaults to `number`.
- * @template {string} [Status=string] Generic type for the error status, defaults to `string`.
+ * @template {number} [Code=number] Generic type for the error `code`, defaults to `number`.
+ * @template {string} [Status=string] Generic type for the error `status`, defaults to `string`.
  * @extends {Context<Type>}
  */
 export interface ErrorContext<

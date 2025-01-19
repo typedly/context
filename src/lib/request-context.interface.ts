@@ -4,8 +4,8 @@ import { Context } from './context.interface';
  * @description Context action of specific type. Provides contextual information about an action.
  * @export
  * @interface RequestContext
- * @template [Type=string] The generic type variable `Type` indicates type of the context `type`.
- * @template [Method=string] The generic type variable `Method` indicates type of the context `method`.
+ * @template [Type=string] The generic type variable `Type` indicates type of the context `type`. Defaults to `string`.
+ * @template [Method=string] The generic type variable `Method` indicates type of the context `method`. Defaults to `string`.
  * @extends {Context<Type>}
  */
 export interface RequestContext<

@@ -2,7 +2,7 @@
  * @description A generic context interface.
  * @export
  * @interface Context
- * @template [Type=string] The type of the context type, defaults to `string`. 
+ * @template [Type=string] The type of the context `type`, defaults to `string`. 
  */
 export interface Context<Type = string> {
   /**
