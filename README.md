@@ -9,32 +9,39 @@
 
 ## typedly/context
 
-A TypeScript type definitions package for context data structures.
-
 <!-- npm badge -->
 [![npm version][typedly-npm-badge-svg]][typedly-npm-badge]
 [![GitHub issues][typedly-badge-issues]][typedly-issues]
 [![GitHub license][typedly-badge-license]][typedly-license]
 
-<br>
+A TypeScript type definitions package for **context** data structures.
+
+**Version:** v1.0.0
+
+## Overview
+
+- **Action**, **Error**, **Request** context interfaces to use with the libraries such as [`@typescript-package/callback`](https://github.com/typescript-package/callback).
 
 ## Table of contents
 
-* [Installation](#installation)
-* [Api](#api)
-  * ActionContext
-  * ErrorContext
-  * Context
-  * RequestContext
-* [Git](#git)
-  * [Commit](#commit)
-  * [Versioning](#versioning)
-* [License](#license)
+- [Installation](#installation)
+- [Api](#api)
+  - [Interfaces](#interfaces)
+    - ActionContext
+    - ErrorContext
+    - Context
+    - RequestContext
+- [Contributing](#contributing)
+- [Code of Conduct](code-of-conduct)
+- [Git](#git)
+  - [Commit](#commit)
+  - [Versioning](#versioning)
+- [License](#license)
 
 ## Installation
 
 ```bash
-npm install @typedly/context
+npm install @typedly/context --save-peer
 ```
 
 ## Api
@@ -48,13 +55,28 @@ import {
 } from '@typedly/context';
 ```
 
+## Interfaces
+
+- [`ActionContext`](https://github.com/typedly/context/blob/main/src/lib/action-context.interface.ts)
+- [`ErrorContext`](https://github.com/typedly/context/blob/main/src/lib/context.interface.ts)
+- [`Context`](https://github.com/typedly/context/blob/main/src/lib/error-context.interface.ts)
+- [`RequestContext`](https://github.com/typedly/context/blob/main/src/lib/request-context.interface.ts)
+
+## Contributing
+
+Your contributions are valued! If you'd like to contribute, please feel free to submit a pull request. Help is always appreciated.
+
+## Code of Conduct
+
+By participating in this project, you agree to follow **[Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)**.
+
 ## GIT
 
 ### Commit
 
-* [AngularJS Git Commit Message Conventions][git-commit-angular]
-* [Karma Git Commit Msg][git-commit-karma]
-* [Conventional Commits][git-commit-conventional]
+- [AngularJS Git Commit Message Conventions][git-commit-angular]
+- [Karma Git Commit Msg][git-commit-karma]
+- [Conventional Commits][git-commit-conventional]
 
 ### Versioning
 
@@ -62,9 +84,9 @@ import {
 
 **Given a version number MAJOR.MINOR.PATCH, increment the:**
 
-* MAJOR version when you make incompatible API changes,
-* MINOR version when you add functionality in a backwards-compatible manner, and
-* PATCH version when you make backwards-compatible bug fixes.
+- MAJOR version when you make incompatible API changes,
+- MINOR version when you add functionality in a backwards-compatible manner, and
+- PATCH version when you make backwards-compatible bug fixes.
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
